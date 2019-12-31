@@ -183,3 +183,26 @@ $ make install
     <li>编译准备工作 https://source.android.com/source/building.html</li>
   </ul>
 </ul>
+<h1>刷入手机（因为我没手机，所以这步弄不了了）</h1>
+<pre>
+编译完后，执行：
+$ export ANDROID_PRODUCT_OUT=export ANDROID_PRODUCT_OUT=/Volumes/ASOP/WORKING_DIRECTORY/out/target/product/generic_x86_64
+$ fastboot flashall -w
+$ fastboot reboot
+</pre>
+<h1>用Android Studio 查看源码</h1>
+<h2>编译idegen模块，生成 ./out/host/darwin-x86/framework/idegen.jar </h2>
+<pre>
+配置文件添加
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111/Contents/Home
+export ANDROID_JAVA_HOME=$JAVA_HOME
+</pre>
+<pre>
+重启打开一个终端
+$ cd /Volumes/ASOP/WORKING_DIRECTORY/
+$ mmm development/tools/idegen/
+</pre>
+<code>$ mmm development/tools/idegen/</code>
+<code>生成工程文件，生成在了 /Volumes/ASOP/WORKING_DIRECTORY 目录下</code>
+<code>$ development/tools/idegen/idegen.sh</code>
+<code>用 Android Studio 打开 idegen.ipr</code>
