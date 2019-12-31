@@ -148,6 +148,10 @@ $ make install
   Which would you like? [aosp_arm-eng] 6 // 6. aosp_x86_64-eng
   $ make -j4
   </pre>
+	<li>编译成功</li>
+	<pre>
+	#### build completed successfully (04:08 (mm:ss)) ####
+	</pre>
 </ol>
 <h1>编译时可能会遇到的问题</h1>
 <ol>
