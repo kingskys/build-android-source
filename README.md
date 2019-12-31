@@ -57,9 +57,9 @@ Mac OS 编译 android 8.1.0 源码
 <h2>repo命令</h2>
 <ol>
   <li>查看版本信息</li>
-  <code>repo info</code>
+  <code>$ repo info</code>
   <li>查看当前分支</li>
-  <code>repo branches</code>
+  <code>$ repo branches</code>
   <li>查看可切换分支</li>
   <pre>
     <code>$ cd .repo/manifests</code>
@@ -74,13 +74,13 @@ Mac OS 编译 android 8.1.0 源码
     </code>
   </pre>
   <li>查看android当前版本号</li>
-  <code>grep PLATFORM_VERSION build/core/version_defaults.mk</code>
+  <code>$ grep PLATFORM_VERSION build/core/version_defaults.mk</code>
 </ol>
 <h1>编译工具</h1>
 <table>
   <tr>
     <th>工具</th>
-    <th width="100">链接</th>
+    <th>链接</th>
     <th>安装</th>
     <th>安装目录</th>
     <th>备注</th>
@@ -202,7 +202,9 @@ export ANDROID_JAVA_HOME=$JAVA_HOME
 $ cd /Volumes/ASOP/WORKING_DIRECTORY/
 $ mmm development/tools/idegen/
 </pre>
+<pre>
 <code>$ mmm development/tools/idegen/</code>
 <code>生成工程文件，生成在了 /Volumes/ASOP/WORKING_DIRECTORY 目录下</code>
 <code>$ development/tools/idegen/idegen.sh</code>
 <code>用 Android Studio 打开 idegen.ipr</code>
+</pre>
